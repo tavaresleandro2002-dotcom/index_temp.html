@@ -37,8 +37,7 @@
     a.button {
       display: inline-block;
       padding: 15px 30px;
-      background: #00c6ff;
-      color: #000;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       border-radius: 30px;
@@ -46,7 +45,28 @@
       transition: 0.3s ease;
     }
 
-    a.button:hover {
+    /* Botões específicos */
+    .btn-cv {
+      background: #1abc9c; /* verde-azulado */
+    }
+    .btn-cv:hover {
+      background: #16a085;
+      transform: scale(1.05);
+    }
+
+    .btn-wpp {
+      background: #25D366; /* verde WhatsApp */
+    }
+    .btn-wpp:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    .btn-portfolio {
+      background: #00c6ff;
+      color: #000;
+    }
+    .btn-portfolio:hover {
       background: #fff;
       transform: scale(1.05);
     }
@@ -84,14 +104,14 @@
         e segurança da informação.
       </p>
 
-      <a href="#projetos" class="button">Entrar no Portfólio</a>
+      <a href="#projetos" class="button btn-portfolio">Entrar no Portfólio</a>
 
       <div class="links">
         <a href="https://github.com/tavaresleandro2002-dotcom" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/leandro-tavaressz1620" target="_blank">LinkedIn</a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tavaresleandro2002@gmail.com" target="_blank">Email</a>
-        <a href="https://github.com/tavaresleandro2002-dotcom/raw/main/Leandro_Tavares_CV.pdf" class="button" download>Baixar CV</a>
-        <a href="https://wa.me/5511976477770" target="_blank" class="button" style="background:#25D366; color:#fff;">WhatsApp</a>
+        <a href="https://drive.google.com/file/d/10DGgx5mhKMxtaZSzTKq1bKpwFtKMvygN/view?usp=sharing" class="button btn-cv" target="_blank">Baixar CV</a>
+        <a href="https://wa.me/5511976477770" class="button btn-wpp" target="_blank">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -105,9 +125,6 @@
       </p>
     </div>
   </section>
-
-</body>
-</html>
 
 </body>
 </html>
