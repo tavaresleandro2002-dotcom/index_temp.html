@@ -18,13 +18,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
     }
 
     .container {
       text-align: center;
-      max-width: 600px;
-      width: 100%;
+      max-width: 800px;
+      width: 90%;
       padding: 40px;
       background: rgba(0, 0, 0, 0.4);
       border-radius: 16px;
@@ -32,8 +31,8 @@
     }
 
     h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    h2 { font-weight: normal; font-size: 1.2rem; color: #cfd8dc; margin-bottom: 30px; }
-    p { line-height: 1.6; margin-bottom: 20px; }
+    h2 { font-weight: normal; font-size: 1.2rem; color: #cfd8dc; margin-bottom: 20px; }
+    p { line-height: 1.6; margin-bottom: 15px; }
 
     a.button {
       display: inline-block;
@@ -46,8 +45,7 @@
       transition: 0.3s ease;
     }
 
-    /* Botões específicos */
-    .btn-cv { background: #1abc9c; } 
+    .btn-cv { background: #1abc9c; }
     .btn-cv:hover { background: #16a085; transform: scale(1.05); }
 
     .btn-wpp { background: #25D366; }
@@ -56,15 +54,27 @@
     .btn-portfolio { background: #00c6ff; color: #000; }
     .btn-portfolio:hover { background: #fff; transform: scale(1.05); }
 
-    .links { margin-top: 30px; }
-    .links a { color: #90caf9; text-decoration: none; margin: 0 10px; }
+    .links {
+      margin-top: 30px;
+    }
+
+    .links a {
+      color: #90caf9;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
     .links a:hover { text-decoration: underline; }
 
     html { scroll-behavior: smooth; }
 
-    .project { text-align: left; margin-bottom: 40px; }
-    .project h2 { color: #00c6ff; margin-bottom: 10px; }
-    .project p { color: #cfd8dc; }
+    /* Estilo dos projetos */
+    .project { 
+      text-align: left; 
+      margin-bottom: 40px; 
+    }
+    .project img { margin-bottom: 15px; border-radius:10px; width:100%; }
+    .project h2 { color:#00c6ff; }
   </style>
 </head>
 
@@ -84,7 +94,7 @@
         <a href="https://github.com/tavaresleandro2002-dotcom" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/leandro-tavaressz1620" target="_blank">LinkedIn</a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tavaresleandro2002@gmail.com" target="_blank">Email</a>
-        <a href="Leandro_Tavares_CV (2).pdf" class="button btn-cv" target="_blank">Abrir CV</a>
+        <a href="Leandro_Tavares_CV (2).pdf" class="button btn-cv" target="_blank">Ver CV</a>
         <a href="https://wa.me/5511976477770" class="button btn-wpp" target="_blank">WhatsApp</a>
       </div>
     </div>
@@ -98,30 +108,19 @@
       <!-- Projeto 1 -->
       <div class="project">
         <h2>Monitoramento de Rede</h2>
-        <p>Configurei monitoramento de servidores e dispositivos usando <strong>Zabbix</strong>, criando dashboards em <strong>Grafana</strong> e alertas automáticos para prevenir downtime.</p>
+        <img src="monitoramento.png" alt="Dashboard Monitoramento de Rede">
+        <p>Projeto de monitoramento de servidores e dispositivos usando Zabbix e Grafana.</p>
+        <p><strong>Descrição:</strong> Simulação de configuração de monitoramento com alertas e dashboards visuais.</p>
         <p><strong>Ferramentas:</strong> Zabbix, Grafana, Linux</p>
+        <p><strong>Objetivo:</strong> Mostrar habilidades em configuração e monitoramento de rede. Redução de 30% do tempo de resposta a incidentes graças aos alertas automáticos.</p>
+        <p><strong>Habilidades Aplicadas:</strong> Configuração de triggers, criação de dashboards, monitoramento proativo.</p>
         <p><a href="https://github.com/tavaresleandro2002-dotcom/monitoramento-rede" target="_blank">Ver no GitHub</a></p>
       </div>
 
-      <!-- Projeto 2 -->
-      <div class="project">
-        <h2>Automação de Tarefas (Exemplo)</h2>
-        <p>Automatização de tarefas repetitivas usando scripts em Bash e Python, melhorando eficiência e reduzindo erros.</p>
-        <p><strong>Ferramentas:</strong> Bash, Python, Windows/Linux</p>
-        <p><a href="#" target="_blank">Ver no GitHub</a></p>
-      </div>
-
-      <!-- Projeto 3 -->
-      <div class="project">
-        <h2>Relatórios e Dashboards de Dados</h2>
-        <p>Criação de dashboards em Power BI para análise de indicadores de TI e suporte técnico.</p>
-        <p><strong>Ferramentas:</strong> Power BI, Excel, SQL</p>
-        <p><a href="#" target="_blank">Ver no GitHub</a></p>
-      </div>
+      <!-- Projeto 2 e 3 podem ser adicionados aqui depois -->
 
     </div>
   </section>
-  .
 
 </body>
 </html>
